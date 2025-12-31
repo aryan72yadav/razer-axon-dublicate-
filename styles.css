@@ -1,0 +1,346 @@
+.razer-logo {
+  width: 40px;   /* size control */
+  height: auto;
+  display: inline-block;
+}
+.console-video {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.console-video video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+ .navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222;
+  padding: 14px 30px;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.navbar.shrink {
+  padding: 8px 30px;
+  background: #111; /* darker on scroll */
+}
+ .nav-links a {
+  position: relative;
+  color: rgb(249, 252, 249); /* normal green */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 8px 14px;        /* spacing inside box */
+  border-radius: 6px;       /* rounded box */
+  background: #222;         /* grey box */
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;  /* place underline above bottom edge */
+  height: 2px;
+  width: 0;
+  background: rgb(0, 139, 19);
+  transition: width 0.3s ease;
+}
+
+nav-links a:hover::after {
+  width: 100%; /* red underline animation */
+}
+
+    .nav-links{display:flex;gap:20px;align-items:center}
+    .nav-links a{color:rgb(249, 252, 249);text-decoration:none;transition:color .2s}
+    .nav-links a:hover{color:#fff}
+    /* Link Glow Hover */
+
+.nav-links a:hover {
+  color: darkred;
+  background: #333;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6); /* red glow */
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background: #000; /* Black theme */
+  color: #fff;
+  line-height: 1.6;
+}
+
+.search input {
+  width: 120px;
+  transition: width 0.3s ease;
+}
+.search input:focus {
+  width: 200px; /* expands smoothly */
+  background:rgb(189, 255, 135);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.8));
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #00ff00; /* Neon Green */
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Section Headings */
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #00ff00;
+  margin-bottom: 1rem;
+}
+
+section p {
+  margin-bottom: 2rem;
+  color: #aaa;
+}
+
+/* Product Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+.card a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background: #00ff00;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.card a:hover {
+  background: #00cc00;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+.card-buttons a {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.buy-btn{
+   padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+ .cart-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.buy-btn {
+  background: #ccc;
+  color: #000;
+  font-weight: bold;
+}
+.buy-btn:hover {
+  box-shadow: 0 0 15px #00ff00;
+}
+
+.cart-btn {
+  background: transparent;
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
+.cart-btn:hover {
+  background: #ccc;
+  color: #000;
+  box-shadow: 0 0 10px #00ff00;
+}.buy-btn:hover {
+  box-shadow: 0 0 15px #ccc;
+}
+
+.cart-btn {
+  background: transparent;
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
+.cart-btn:hover {
+  background:#ccc;
+  color: #000;
+  box-shadow: 0 0 10px#ccc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  border-top: 1px solid #222;
+}
+
+footer nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #00ff00;
+}
+
+footer nav a:hover {
+  color: #fff;
+}
+
+footer small {
+  display: block;
+  margin-top: 1rem;
+  color: #555;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.5);
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.4s ease;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00ff00;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card-overlay h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.card-overlay p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #fff;
+}
+
+.card:hover .card-img {
+  opacity: 0;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+footer-content {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #bbb;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00ff00; /* hover pe neon green */
+}
+

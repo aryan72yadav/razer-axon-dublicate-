@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PC — YourSite</title>
+  <link rel="stylesheet" href="styles.css" />
+   <script>
+window.addEventListener("scroll", function() {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("shrink");
+  } else {
+    navbar.classList.remove("shrink");
+  }
+});
+</script>
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="navbar">
+      <div class="nav-links">
+      <img src="razer-ths-logo.svg" alt="Razer Logo" class="razer-logo">
+      <a href="home.html">Home</a>
+      <a href="https://www.razer.com/store">Store</a>
+      <a href="console.html">Console</a>
+      <a href="Furniture and Lifestyle.html">Furniture and Lifestyle</a>
+      <a href="Gold & Silver.html">Gold & Silver</a>
+      <a href="community.html">Community</a>
+      <a href="support.html">Support</a>
+       </div>
+      <div class="search">
+        <input type="text" placeholder="Search..." />
+      </div>
+    </div>
+      </div>
+      </div>
+    </nav>
+    <h1>PC | Laptops, Desktops & Peripherals</h1>
+    <p>From gaming laptops to battle-station components and powerful peripherals.</p>
+  </header>
+  <!-- Console Showcase Video -->
+<div class="console-video">
+  <video autoplay muted loop playsinline>
+    <source src="razer-blade.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+ <section id="laptops">
+  <h2>Laptops & BattleStation</h2>
+  <div class="cards">
+    
+    <!-- Razer Blade 14 -->
+    <div class="card">
+      <img src="blade14.jpg" alt="Razer Blade 14" class="card-img">
+      <div class="card-overlay">
+        <h3>RAZER BLADE 14</h3>
+        <p>Thin Out The Competition<br>AMD Ryzen™ 9 Processor<br>NVIDIA® GeForce RTX™ 4070</p>
+         <div class="card-buttons">
+          <a href="https://www.razer.com/gaming-laptops/razer-blade-14">
+           <button class="buy-btn">Buy Now</button></a>
+           <button class="cart-btn">Add to Cart</button>
+          </div>
+       </div>
+    </div>
+    <!-- Razer Blade 16 -->
+    <div class="card">
+      <img src="blade16.jpg" alt="Razer Blade 16" class="card-img">
+      <div class="card-overlay">
+        <h3>RAZER BLADE 16</h3>
+        <p>Ultra-thin 16-Inch Gaming Laptop<br>NVIDIA® RTX™ 5090<br>AMD Ryzen™ AI 9 370 HX
+         <div class="card-buttons">
+         <a href="https://www.razer.com/gaming-laptops/razer-blade-16">
+          <button class="buy-btn">Buy Now</button></a> 
+    <button class="cart-btn">Add to Cart</button>
+       </p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Razer Blade 18 -->
+    <div class="card">
+      <img src="blade18.jpg" alt="Razer Blade 18" class="card-img">
+      <div class="card-overlay">
+        <h3>RAZER BLADE 18</h3>
+        <p>The Most Powerful Blade Ever<br>18-Inch Display<br>NVIDIA® RTX™ 5090
+        <div class="card-buttons">
+    <a href="https://www.razer.com/gaming-laptops/razer-blade-18"><button class="buy-btn" >Buy Now</button></a>
+    <button class="cart-btn">Add to Cart</button>
+      </p>
+      </div>
+    </div>
+     </div>
+  </div>
+</section>
+
+  <section id="peripherals">
+    <h2>PC &amp; Laptop Peripherals</h2>
+    <div class="cards">
+      <div class="card"><img src="mouse.jpg" alt=""><h3>Mice</h3><a href="https://www.razer.com/search/mouse">Explore</a></div>
+      <div class="card"><img src="keyboard.jpg" alt=""><h3>Keyboards</h3><a href="https://www.razer.com/search/keyboards">Explore</a></div>
+      <!-- etc -->
+    </div>
+  </section>
+
+  <section id="components">
+    <h2>Gaming Desktops & Components</h2>
+    <p>High-performance builds like Tomahawk, Hanbo Chroma — customize your battlestation.</p>
+    <div class="cards">
+      <div class="card"><img src="tomahawk.jpg" alt=""><h3>Tomahawk Case</h3><a href="https://www.razer.com/search/tomahawk">Learn more</a></div>
+      <!-- etc -->
+    </div>
+  </section>
+
+  <section id="content-creation">
+    <h2>Content Creation & Streaming</h2>
+    <div class="cards">
+      <div class="card"><img src="webcam.jpg" alt=""><h3>Seiren Pro Mic</h3><a href="https://www.razer.com/search/seiren">Learn more</a></div>
+      <div class="card"><img src="cam.jpg" alt=""><h3>Web cam</h3><a href="https://www.razer.com/search/cam">Learn more</a></div>
+      <div class="card"><img src="Razer Kraken V4 Pro.jpg" alt=""><h3>Razer Kraken V4 Pro</P></h3><a href="https://www.razer.com/search/kraken v4">Learn more</a></div>
+
+    </div>
+  </section>
+
+  <section id="software">
+    <h2>Software & Ecosystem</h2>
+    <div class="cards">
+      <div class="card"><img src="cortex.jpg" alt=""><h3>Razer Cortex</h3><a href="https://www.razer.com/search/cortex">Learn more</a></div>
+      <div class="card"><img src="synapse.jpg" alt=""><h3>Razer Synapse</h3><a href="https://www.razer.com/search/synapse">Learn more</a></div>
+      <!-- Axon, Chroma -->
+    </div>
+  </section>
+
+  <footer>
+    <small>© ARYAN 2025</small>
+  </footer>
+</body>
+</html>
